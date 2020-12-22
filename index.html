@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendar</title>
+<link href="dateselector/dateselector.css" rel="stylesheet" type="text/css">
+<style>
+body { background-color:#ECF0F1;}
+</style>
+</head>
+
+<body>
+<div class="container" style="margin:150px auto; max-width:800px">
+<h2>Calendar</h2>
+<input class="dateselector-basic" type="text">
+</div>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+<script src="dateselector/jquery.dateselector.js"></script>
+<script>
+$('.dateselector-basic').dateSelector({
+    onDateChange: function() {
+        // Your code here...
+        //alert('date changed!');
+    }
+});
+</script>
+
+</body>
+</html>
